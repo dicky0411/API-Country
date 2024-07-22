@@ -5,21 +5,21 @@
 
 
 **API Usage
-Endpoint: /{code}
-Method: GET
-Parameters:
-code (required): The country code to look up.
+**Endpoint: /{code}
+**Method: GET
+**Parameters:
+**code (required): The country code to look up.
 
-Input: /86
+**Input: /86
 
-Response:
+**Response:
 {
-  "country": "China",
-  "code": 86,
-  "tw": "中國",
-  "locale": "CN",
-  "zh": "中国",
-  "lat": 35.86166,
-  "lng": 104.195397,
-  "emoji": "🇨🇳"
+  **"country": "China",
+  **"code": 86,
+  **"tw": "中國",
+  **"locale": "CN",
+  **"zh": "中国",
+  **"lat": 35.86166,
+  **"lng": 104.195397,
+  **"emoji": "🇨🇳"
 }
