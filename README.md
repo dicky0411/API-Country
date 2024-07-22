@@ -3,6 +3,9 @@
 
 API-Country** 是一个简单的 API，允许您根据国家代码检索国家信息。该 API 提供了国家名称、语言环境、纬度、经度和表情符号表示等详细信息。
 
+We read off a JSON file of all the country data and store it in a SQLite database.
+我们设置了一个 SQLite 数据库，然后创建一个数据库文件
+
 
 API Usage
 Endpoint: /{code}
