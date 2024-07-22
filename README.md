@@ -7,11 +7,12 @@ We read off a JSON file of all the country data and store it in a SQLite databas
 我们设置了一个 SQLite 数据库，然后创建一个数据库文件
 
 
-API Usage
+# API Usage
 Endpoint: /{code}
 Method: GET
 Parameters:
 code (required): The country code to look up.
+
 
 Input: /86
 
