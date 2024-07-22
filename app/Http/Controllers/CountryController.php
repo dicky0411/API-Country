@@ -3,21 +3,21 @@ namespace App\Http\Controllers;
 
 use App\Models\Country;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
 class CountryController extends Controller
 {
     public function show($code)
     {
+        // Find the country by code
         $country = Country::where('code', $code)->first();
+
+        // Check if country exists
         if (!$country) {
-            return response()->json([
-                'message' => 'Country not found'
-            ], Response::HTTP_NOT_FOUND);
+            return view('welcome', ['message' => 'Country not found']);
         }
 
         // Return view with country information
-        return view('country', [
+        return view('welcome', [
             'country' => $country->en,
             'code' => $country->code,
             'tw' => $country->tw,

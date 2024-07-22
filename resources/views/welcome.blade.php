@@ -1,3 +1,4 @@
+<!-- resources/views/country.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,14 +13,14 @@
             <h1>{{ $message }}</h1>
         @else
             <h1>Country Information</h1>
-            <p><strong>Country:</strong> {{ $country }}</p>
-            <p><strong>Code:</strong> {{ $code }}</p>
-            <p><strong>Traditional Chinese:</strong> {{ $tw }}</p>
-            <p><strong>Locale:</strong> {{ $locale }}</p>
-            <p><strong>Simplified Chinese:</strong> {{ $zh }}</p>
-            <p><strong>Latitude:</strong> {{ $lat }}</p>
-            <p><strong>Longitude:</strong> {{ $lng }}</p>
-            <p><strong>Emoji:</strong> {{ $emoji }}</p>
+            <p><strong>Country:</strong> {{ $country ?? 'Not Available' }}</p>
+            <p><strong>Code:</strong> {{ $code ?? 'Not Available' }}</p>
+            <p><strong>Traditional Chinese:</strong> {{ $tw ?? 'Not Available' }}</p>
+            <p><strong>Locale:</strong> {{ $locale ?? 'Not Available' }}</p>
+            <p><strong>Simplified Chinese:</strong> {{ $zh ?? 'Not Available' }}</p>
+            <p><strong>Latitude:</strong> {{ $lat ?? 'Not Available' }}</p>
+            <p><strong>Longitude:</strong> {{ $lng ?? 'Not Available' }}</p>
+            <p><strong>Emoji:</strong> {{ $emoji ?? 'Not Available' }}</p>
         @endif
     </div>
 </body>
