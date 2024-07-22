@@ -1,10 +1,10 @@
 # API-Country
 **API-Country** is a simple API that allows you to retrieve country information based on a country code. The API provides details such as the country name, locale, latitude, longitude, and emoji representation.
 
-**API-Country** 是一个简单的 API，允许您根据国家代码检索国家信息。该 API 提供了国家名称、语言环境、纬度、经度和表情符号表示等详细信息。
+API-Country** 是一个简单的 API，允许您根据国家代码检索国家信息。该 API 提供了国家名称、语言环境、纬度、经度和表情符号表示等详细信息。
 
 
-**API Usage
+API Usage
 Endpoint: /{code}
 Method: GET
 Parameters:
