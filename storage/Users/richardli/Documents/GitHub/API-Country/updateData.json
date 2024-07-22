@@ -1,0 +1,122 @@
+[
+    {
+        "request": {
+            "method": "GET",
+            "url": "http:\/\/127.0.0.1:8000\/2",
+            "params": []
+        },
+        "response": {
+            "resultcode": "102",
+            "reason": "Country not found",
+            "result": null,
+            "error_code": 10002
+        },
+        "timestamp": "2024-07-22 06:24:01"
+    },
+    {
+        "request": {
+            "method": "GET",
+            "url": "http:\/\/127.0.0.1:8000\/52",
+            "params": []
+        },
+        "response": {
+            "resultcode": "200",
+            "reason": "Success",
+            "result": {
+                "country": "Mexico",
+                "code": 52,
+                "tw": "\u58a8\u897f\u54e5",
+                "locale": "MX",
+                "zh": "\u58a8\u897f\u54e5",
+                "lat": 42.5987263,
+                "lng": -5.5670959,
+                "emoji": "\ud83c\uddf2\ud83c\uddfd"
+            },
+            "error_code": null
+        },
+        "timestamp": "2024-07-22 06:24:03"
+    },
+    {
+        "request": {
+            "method": "GET",
+            "url": "http:\/\/127.0.0.1:8000\/52",
+            "params": []
+        },
+        "response": {
+            "resultcode": "200",
+            "reason": "Success",
+            "result": {
+                "country": "Mexico",
+                "code": 52,
+                "tw": "\u58a8\u897f\u54e5",
+                "locale": "MX",
+                "zh": "\u58a8\u897f\u54e5",
+                "lat": 42.5987263,
+                "lng": -5.5670959,
+                "emoji": "\ud83c\uddf2\ud83c\uddfd"
+            },
+            "error_code": null
+        },
+        "timestamp": "2024-07-22 06:24:05"
+    },
+    {
+        "request": {
+            "method": "GET",
+            "url": "http:\/\/127.0.0.1:8000\/86",
+            "params": []
+        },
+        "response": {
+            "resultcode": "200",
+            "reason": "Success",
+            "result": {
+                "country": "China",
+                "code": 86,
+                "tw": "\u4e2d\u570b",
+                "locale": "CN",
+                "zh": "\u4e2d\u56fd",
+                "lat": 35.86166,
+                "lng": 104.195397,
+                "emoji": "\ud83c\udde8\ud83c\uddf3"
+            },
+            "error_code": null
+        },
+        "timestamp": "2024-07-22 06:24:06"
+    },
+    {
+        "request": {
+            "method": "GET",
+            "url": "http:\/\/127.0.0.1:8000\/1",
+            "params": []
+        },
+        "response": {
+            "resultcode": "200",
+            "reason": "Success",
+            "result": {
+                "country": "United States of America",
+                "code": 1,
+                "tw": "\u7f8e\u570b",
+                "locale": "US",
+                "zh": "\u7f8e\u56fd",
+                "lat": 64.8377778,
+                "lng": -147.7163889,
+                "emoji": "\ud83c\uddfa\ud83c\uddf8"
+            },
+            "error_code": null
+        },
+        "timestamp": "2024-07-22 06:24:07"
+    },
+    {
+        "request": {
+            "method": "GET",
+            "url": "http:\/\/127.0.0.1:8000\/8",
+            "params": []
+        },
+        "response": {
+            "resultcode": "102",
+            "reason": "Country not found",
+            "result": null,
+            "error_code": 10002
+        },
+        "timestamp": "2024-07-22 06:24:08"
+    }
+]
