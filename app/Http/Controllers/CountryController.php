@@ -6,8 +6,18 @@ use Illuminate\Http\Request;
 
 class CountryController extends Controller
 {
-    public function show($code)
+    public function show(Request $request, $code = null)
     {
+        // If no code is provided, check if it's in the query parameters
+        if (is_null($code)) {
+            $code = $request->input('code');
+        }
+
+        // Validate the length of the input
+        if (strlen($code) > 10) {
+            return view('welcome', ['message' => 'Input is too long.']);
+        }
+
         // Find the country by code
         $country = Country::where('code', $code)->first();
 
