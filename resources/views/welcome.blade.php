@@ -50,7 +50,7 @@
         }
         .error {
             color: #f44336;
-            background: rgba(255, 235, 238, 0.8);
+            background: rgba(255, 127, 127, 0.8);
             border: 2px solid #f44336;
             padding: 15px;
             border-radius: 8px;
