@@ -8,58 +8,59 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
             margin: 0;
             padding: 0;
-            color: #333;
+            color: rgb(237, 233, 157);
         }
         .container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
         }
         h1 {
-            color: #222;
-            font-size: 2.2em;
+            color: rgb(237, 233, 157);
+            font-size: 2.5em;
             margin-bottom: 20px;
             text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
         p {
-            font-size: 1.1em;
+            font-size: 1.2em;
             margin: 10px 0;
             text-align: center;
+            
         }
         strong {
-            color: #555;
+            color: rgb(237, 233, 157);
         }
         .info-section {
             padding: 15px;
             margin-top: 20px;
-            background: #f9f9f9;
-            border: 1px solid #ddd;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid #ffeb3b;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .info-section p {
-            margin: 0;
-            font-size: 1.1em;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         }
         .error {
-            color: #d9534f;
-            background: #f2dede;
-            border: 1px solid #d9534f;
+            color: #f44336;
+            background: rgba(255, 235, 238, 0.8);
+            border: 2px solid #f44336;
             padding: 15px;
             border-radius: 8px;
             margin-top: 20px;
             text-align: center;
         }
         .info {
-            color: #5bc0de;
-            background: #d9edf7;
-            border: 1px solid #5bc0de;
+            color: #4caf50;
+            background: rgba(76, 175, 80, 0.2);
+            border: 2px solid #4caf50;
             padding: 15px;
             border-radius: 8px;
             margin-top: 20px;
@@ -72,37 +73,45 @@
         }
         .search-form input[type="text"] {
             padding: 12px;
-            font-size: 1em;
-            border: 2px solid #333;
+            font-size: 1.2em;
+            border: 2px solid #ffeb3b;
             border-radius: 25px 0 0 25px;
             width: 300px;
             box-sizing: border-box;
             outline: none;
-            transition: border-color 0.3s;
+            background: rgba(255, 255, 255,0.2);
+            color: #fff;
+            transition: border-color 0.3s, background 0.3s;
         }
         .search-form input[type="text"]:focus {
-            border-color: #007bff;
+            color: rgb(237, 233, 157);
+            background: rgb(237, 0, 157);
         }
         .search-form button {
             padding: 12px;
-            font-size: 1em;
-            border: 2px solid #333;
+            font-size: 1.2em;
+            border: 2px solid #ffeb3b;
             border-radius: 0 25px 25px 0;
-            background: #333;
-            color: #fff;
+            background: #ffeb3b;
+            color: #333;
             cursor: pointer;
-            width: 100px;
+            width: 120px;
             margin-left: -1px;
             transition: background-color 0.3s, border-color 0.3s;
         }
         .search-form button:hover {
-            background: #fff;
-            color: #333;
-            border-color: #333;
+            background: #00bcd4;
+            color: #fff;
+            border-color: #00bcd4;
         }
         .search-form button:active {
-            background: #555;
-            border-color: #555;
+            background: #0097a7;
+            border-color: #0097a7;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
         }
     </style>
 </head>
@@ -135,8 +144,7 @@
             </form>
         </div>
     </div>
-    
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const form = document.getElementById('search-form');
